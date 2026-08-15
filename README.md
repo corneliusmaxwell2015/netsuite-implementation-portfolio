@@ -1,3 +1,9 @@
+![Static Badge](https://img.shields.io/badge/SuiteScript-2.1-blue)
+![Static Badge](https://img.shields.io/badge/NetSuite-Developer-green)
+![Static Badge](https://img.shields.io/badge/SOC2-Ready-purple)
+![Static Badge](https://img.shields.io/badge/JavaScript-ES2020-yellow)
+![Static Badge](https://img.shields.io/badge/Documentation-Complete-success)
+
 # NetSuite Implementation Portfolio
 
 A clean, professional SuiteScript 2.1 portfolio demonstrating NetSuite implementation skills, implementation design, and SOC 2–aware architecture thinking.
