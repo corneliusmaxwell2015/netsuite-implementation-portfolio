@@ -1,2 +1,2 @@
 # netsuite-implementation-portfolio
-Basic codes for NetSuite Implementations 
+A clean, professional SuiteScript 2.1 portfolio demonstrating NetSuite implementation skills.
