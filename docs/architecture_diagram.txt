@@ -1,0 +1,56 @@
++-------------------------+          +---------------------------+
+| External Systems (CRM,  |  HTTPS   |   NetSuite RESTlet        |
+| Website, Partner Portal)|--------->|   rl_customer_create.js   |
++-------------------------+          +---------------------------+
+                                              |
+                                              v
+                                      +------------------+
+                                      | Customer Records |
+                                      +------------------+
+
++------------------+       Submit SO        +---------------------------+
+| Sales Rep (UI)   |----------------------->| UE Script                 |
+| NetSuite UI      |                        | ue_customer_credit_...   |
++------------------+                        +---------------------------+
+                                              |
+                                              v
+                                      +------------------+
+                                      | Credit Decision  |
+                                      | (Pass / Block)   |
+                                      +------------------+
+                                              |
+                                              v
+                                      +---------------------------+
+                                      | Workflow Action Script    |
+                                      | wa_credit_violation_...   |
+                                      +---------------------------+
+                                              |
+                                              v
+                                      +---------------------------+
+                                      | Credit Log Custom Record  |
+                                      +---------------------------+
+
++------------------+   Menu → Dashboard   +---------------------------+
+| Warehouse Manager|--------------------->| Suitelet                  |
+| NetSuite UI      |                      | sl_inventory_dashboard.js |
++------------------+                      +---------------------------+
+                                              |
+                                              v
+                                      +---------------------------+
+                                      | Saved Search: Inventory   |
+                                      +---------------------------+
+
++---------------------------+
+| Map/Reduce Script         |
+| mr_revenue_recalc.js      |
++---------------------------+
+          |
+          v
++---------------------------+
+| Invoice Records           |
++---------------------------+
+
+SOC 2 Considerations (Conceptual):
+- All traffic assumed encrypted (HTTPS/TLS).
+- Access controlled via NetSuite roles and permissions.
+- Logs and changes tracked via NetSuite system notes and version control in this repo.
