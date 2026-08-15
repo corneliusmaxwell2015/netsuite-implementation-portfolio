@@ -1,4 +1,3 @@
-# netsuite-implementation-portfolio
 # NetSuite Implementation Portfolio
 
 A clean, professional SuiteScript 2.1 portfolio demonstrating NetSuite implementation skills, implementation design, and SOC 2–aware architecture thinking.
