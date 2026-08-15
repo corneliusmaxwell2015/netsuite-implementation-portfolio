@@ -1,0 +1,14 @@
+{
+  "searchId": "customsearch_recent_sales_orders",
+  "type": "salesorder",
+  "filters": [
+    ["datecreated", "within", "last30days"]
+  ],
+  "columns": [
+    "tranid",
+    "entity",
+    "total",
+    "datecreated"
+  ],
+  "description": "Shows sales orders created in the last 30 days."
+}
