@@ -58,54 +58,70 @@ This document outlines the architecture used in the NetSuite Implementation Port
 ---
 
 ## 3. High-Level Architecture Diagram
+
 +-------------------------+          +---------------------------+
 | External Systems (CRM,  |  HTTPS   |   NetSuite RESTlet        |
 | Website, Partner Portal)|--------->|   rl_customer_create.js   |
 +-------------------------+          +---------------------------+
+
 |
 v
+
 +------------------+
 | Customer Records |
 +------------------+
+
 
 +------------------+       Submit SO        +---------------------------+
 | Sales Rep (UI)   |----------------------->| UE Script                 |
 | NetSuite UI      |                        | ue_customer_credit_...   |
 +------------------+                        +---------------------------+
+
 |
 v
+
 +------------------+
 | Credit Decision  |
 | (Pass / Block)   |
 +------------------+
+
 |
 v
+
 +---------------------------+
 | Workflow Action Script    |
 | wa_credit_violation_...   |
 +---------------------------+
+
 |
 v
+
 +---------------------------+
 | Credit Log Custom Record  |
 +---------------------------+
+
 
 +------------------+   Menu → Dashboard   +---------------------------+
 | Warehouse Manager|--------------------->| Suitelet                  |
 | NetSuite UI      |                      | sl_inventory_dashboard.js |
 +------------------+                      +---------------------------+
+
 |
 v
+
 +---------------------------+
 | Saved Search: Inventory   |
 +---------------------------+
+
 
 +---------------------------+
 | Map/Reduce Script         |
 | mr_revenue_recalc.js      |
 +---------------------------+
+
 |
 v
+
 +---------------------------+
 | Invoice Records           |
 +---------------------------+
