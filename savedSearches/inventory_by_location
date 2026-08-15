@@ -1,0 +1,12 @@
+{
+  "searchId": "customsearch_inventory_by_location",
+  "type": "item",
+  "filters": [],
+  "columns": [
+    "itemid",
+    "displayname",
+    "location",
+    "quantityavailable"
+  ],
+  "description": "Displays inventory availability by location."
+}
