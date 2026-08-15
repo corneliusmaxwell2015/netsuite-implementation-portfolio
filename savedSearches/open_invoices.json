@@ -1,1 +1,15 @@
+{
+  "searchId": "customsearch_open_invoices",
+  "type": "invoice",
+  "filters": [
+    ["status", "anyof", "Open"]
+  ],
+  "columns": [
+    "tranid",
+    "entity",
+    "amount",
+    "duedate"
+  ],
+  "description": "Lists all open invoices with customer, amount, and due date."
+}
 
