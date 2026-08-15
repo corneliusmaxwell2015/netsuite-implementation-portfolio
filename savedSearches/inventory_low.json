@@ -1,1 +1,14 @@
+{
+  "searchId": "customsearch_inventory_low",
+  "type": "item",
+  "filters": [
+    ["quantityavailable", "lessthan", "10"]
+  ],
+  "columns": [
+    "itemid",
+    "displayname",
+    "quantityavailable"
+  ],
+  "description": "Shows items with low available inventory."
+}
 
