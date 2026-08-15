@@ -1,1 +1,19 @@
-
+{
+  "searchId": "customsearch_customer_credit_risk",
+  "type": "customer",
+  "filters": [
+    ["creditlimit", "greaterthan", "0"],
+    "AND",
+    ["balance", "greaterthan", "0"]
+  ],
+  "columns": [
+    "entityid",
+    "creditlimit",
+    "balance",
+    {
+      "formula": "{balance} / {creditlimit}",
+      "label": "credit_utilization_ratio"
+    }
+  ],
+  "description": "Shows customers with active credit limits and current balances, including utilization ratio."
+}
